@@ -66,6 +66,7 @@ a{
 	font-family:"Cormorant Garamond";
 	color:#282323;
 }
+a:hover{color: aliceblue;}
  h1{
     font-size: 96px;
     line-height: 106px;
