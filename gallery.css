@@ -38,6 +38,14 @@ position: relative;
   object-position: center;
 	margin: auto;
 }
+.slide > video{
+  display: block;
+  width: auto;
+  height: 81vh;
+  object-fit: cover;
+  object-position: center;
+	margin: auto;
+}
 
 .slide[data-active] {
   opacity: 1;

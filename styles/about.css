@@ -3,7 +3,7 @@ main{background-image:none;
 display: flex}
 section{ background-color: #E2D1BE;
 display: flex;
-	align-items: center;
+align-items: center;
 justify-content:center;
 flex-direction: column; 
 }
@@ -11,5 +11,14 @@ section h1{font-size:40px}
 section p{font-style: italic}
 main div{
     background-color: #E3DAD0;
-    border-radius: 20px;}
+  border-radius: 20px;
+  width: 80%;  
+  margin: 20px; 
+  padding: 25px;
+  max-height: 80vh;}
+
 main div h1{font-size: 35px}
+@media screen and (max-width: 768px) {
+  main div {
+	  width: 90%; }
+}

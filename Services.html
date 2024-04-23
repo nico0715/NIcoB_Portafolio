@@ -2,17 +2,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>gallery</title>
+<title>services</title>
 <link rel="stylesheet" type="text/css" href="styles/reset.css">
 <link rel="stylesheet" type="text/css" href="styles/global.css">
 <link href="styles/portafolio.css" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<title>Nico B Portafolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="gallery.css" rel="stylesheet" type="text/css">
+<link href="styles/services.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-	<header class="header-main">
+<header class="header-main">
 		<div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="index.html">Home</a>
@@ -30,54 +33,20 @@
 			<a href="https://www.instagram.com/nico.b.j/"><div class="header-main-sm-ig"></div></a>
 		</div>
 	</header>
-<section aria-label="Newest Photos">
-    <div class="carousel" data-carousel>
-      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-      <ul data-slides>
-        <li class="slide" data-active>
-          <img src="assets/Artboard 1.png" alt="Nature Image #1">
-        </li>
-        <li class="slide">
-          <img src="assets/Mockup1.png" alt="Nature Image #2">
-        </li>
-        <li class="slide">
-          <img src="assets/logo.png" alt="Nature Image #3">
-        </li>
-		   <li class="slide">
-          <video id="video" autoplay> <source src="assets/FinalAd.mp4"></video> <button id="playPause">Play/Pause</button>
-        </li>
-		  
-      </ul>
-    </div>
-  </section>
-	<script>
-		const buttons = document.querySelectorAll("[data-carousel-button]")
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]")
-
-    const activeSlide = slides.querySelector("[data-active]")
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-    if (newIndex < 0) newIndex = slides.children.length - 1
-    if (newIndex >= slides.children.length) newIndex = 0
-
-    slides.children[newIndex].dataset.active = true
-    delete activeSlide.dataset.active
-  })
-})</script>
+	<main><div class="quoteContainer">
+        <div id="quote"></div>
+        <div id="author"></div>
+      </div>
+	</main>
 	<footer>
 	  <div><h1>contact</h1></div>
       <div><a href="tel:+15879178991">cel: +1 (587) 917-8991</a><br><a href="mailto:Nbarr295@gmail.com">Nbarr295@gmail.com</a></div>
 	  <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d389.1894612723465!2d-114.21529512342681!3d51.068908472681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716e9d9de49489%3A0x81d46377d1921e24!2s133%20Cougarstone%20Pl%20SW%2C%20Calgary%2C%20AB%20T3H%204W8!5e0!3m2!1sen!2sca!4v1709867498353!5m2!1sen!2sca" width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 	<div><p>© Copyrights <span id="year"></span> by Nico Barrero. All rights reserved.</p><script>
 document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
-		<script>
+</script></div>
+</footer>
+<script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -87,21 +56,7 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
-</script></div>
-</footer>
-	<script>
-    var video = document.getElementById("video");
-    var playPauseButton = document.getElementById("playPause");
-
-    playPauseButton.addEventListener("click", function() {
-      if (video.paused) {
-        video.play();
-        playPauseButton.textContent = "Pause";
-      } else {
-        video.pause();
-        playPauseButton.textContent = "Play";
-      }
-    });
-  </script>
+</script>
+	<script src="tarotapi.js" type="module"></script>
 </body>
 </html>
