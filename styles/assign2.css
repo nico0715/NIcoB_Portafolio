@@ -1,0 +1,161 @@
+  .hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-bruno-scramgnon-585759.jpg");
+    background-size: cover;
+    background-position: center;
+	padding: 20px 20px 50px 20px;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	color:peru;
+	font-family:"Cormorant Garamond";
+}
+h1{
+    font-size: 57px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 60px;
+    margin-top: 60px;
+		
+}
+h2{font-size: 100;
+	text-transform: uppercase;
+	font-weight: 50;
+	margin-bottom: 60px;
+}
+h3{font-size: 57px;
+    text-transform: uppercase;
+	font-family:"Cormorant Garamond";
+    margin-bottom: 30px;
+    margin-top: 30px;
+		color: #764A1E;}
+
+.accordion {
+    background-color:#764A1E;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-top: 13px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+	
+}
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  padding: 0 100px;
+  display:none;
+  background-color: white;
+  overflow: hidden;
+}
+.conteiner{
+	background-color:#FFFFFF;
+	margin: 3rem;
+	padding: 1rem 3rem;
+	position: relative;	
+	display: flex;
+	justify-content: space-between;
+}
+
+body{ background-color:#3A0E00;
+margin-left: auto;
+margin-right: auto;}
+.div2{
+	margin: 0px 50px 0px 0px;
+    color: #9D612D;
+}
+.div3{}
+.div4{	
+display: flex;
+align-content: space-between;
+color: #9D612D;
+align-items: center;}
+.picture2 {
+    max-width: 40vw;
+    height: auto;
+    border-radius: 7vh;
+    margin-top: 30px;
+}
+footer{color:#9D612D }
+.button{ border: 2px #BB834C solid;
+padding: 8px 30px;
+border-radius: 30px;
+text-decoration: none;
+color: #FFFFFF;
+cursor: pointer;}
+.card{background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+  width: 24rem;
+}
+.card-content{display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+li{margin: 0px 30px;
+	}
+.paragraph{padding: 0px 25px;
+text-justify: inter-word;}
+ul{display: flex;
+	flex-direction: row;
+align-content: space-between}
+.card-pic{border-bottom: 0.25rem solid #fc0;
+  border-radius: 0.25rem 0.25rem 0 0;
+  height: auto;
+  width: 100%;}
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+	h3{ font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+		
+	}
+  .panel {
+    padding: 0 20px;
+  }
+  .conteiner {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .div2 {
+    margin: 0;
+  }
+  .picture2 {
+    max-width: 100%;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+  .card {
+    width: auto;
+    margin: 0 10px;
+  }
+}
+
+/* Apply styles for larger screens */
+@media screen and (min-width: 1024px) {
+  .conteiner {
+    justify-content: space-around;
+  }
+  .div2 {
+    margin: 0 50px 0 0;
+  }
+}
+
+
